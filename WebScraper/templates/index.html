@@ -5,6 +5,11 @@
     <title>ScrapeMaster</title>
 </head>
 <body>
-
+<h1>Enter the URL to scrape</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Scrape">
+    </form>
 </body>
 </html>
